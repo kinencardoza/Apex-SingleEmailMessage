@@ -1,5 +1,5 @@
 /*
-Author: Kinen Cardoza (kcardoza@a5corp.com)
+Author: Kinen Cardoza 
 Test class : PH_LeadToDistributerEmailHandlerTest
 Created Date: 2/9/2024
 
@@ -34,8 +34,8 @@ public class PH_LeadToDistributerEmailHandler{
         email_instance.setTargetObjectId(leadID);
 // the setTreatTargetObjectAsRecipient() is set to false. When false the email won't be sent to the lead. Default value is true. 
         email_instance.setTreatTargetObjectAsRecipient(false);
-// queries through the OrgWideEmailAddress and gets the Id for the 'noreply@support.parker.com'.          
-        ID noReplyAddressId = [SELECT Id FROM OrgWideEmailAddress where Address = 'noreply@support.parker.com' LIMIT 1].Id;
+// queries through the OrgWideEmailAddress and gets the Id for the 'noreply@support.com'.          
+        ID noReplyAddressId = [SELECT Id FROM OrgWideEmailAddress where Address = 'noreply@support.com' LIMIT 1].Id;
         email_instance.setOrgWideEmailAddressId(noReplyAddressId);
         
         email_instance_list.add(email_instance);
