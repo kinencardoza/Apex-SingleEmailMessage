@@ -1,5 +1,5 @@
 /*
-Author: Kinen Cardoza (kcardoza@a5corp.com)
+Author: Kinen Cardoza
 Main class: PH_LeadToDistributerEmailHandler
 Created Date: 2/9/2024
 
